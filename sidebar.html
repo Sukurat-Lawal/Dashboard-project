@@ -47,7 +47,7 @@ nav ul li a {
 }
 
 h4 {
-    margin-left: 600px;
+    margin-left: 400px;
 }
         
 .btn {
@@ -86,7 +86,21 @@ h4 {
     padding: 10px;
 }
 
+.nav {
+    display: flex;
+    align-items: center;
+}
 
+.navs {
+    margin-right: 0px;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    font-weight: bold;
+    align-items: center;
+}
 
 .card-container {
     display: flex;
@@ -109,6 +123,7 @@ margin-left: 1200px;
 display: block;
 }
 
+
 .card3 {
     width: 200px;
     padding: 20px;
@@ -130,34 +145,78 @@ display: block;
     color: #333;
 }
 
-
-
+.icon {
+    margin-left: 80%;
+    display: flex;
+    justify-content: space-between;
+}
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 14px;}
 }
+
 .cont {
     display: flex; /*use flexbox layout */
     align-items: center; /* Align items vertically in the center */
 }
 
+.icons {
+    width: 50px;
+}
+
+
+
 </style>
  </head>
 </body>
 
-
-    
 <div class="sidenav">
-    <a href="#home"><i class="fa fa-home" aria-hidden="true"> Home</i></a>
-    <a href="#profile"><i class="fa fa-user" aria-hidden="true">Profile</i></a>bv
-    <a href="messages"><i class="fa fa-comment" aria-hidden="true"></i>Messages</a>
-    <a href="history"><i class="fa fa-history" aria-hidden="true">History</i></a>
-    <a href="tasks"><i class="fa fa-tasks" aria-hidden="true"> Tasks</i></a>
-    <a href="communities"><i class="fa fa-users" aria-hidden="true"> Communities</i></a>
-   <a href="settings"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
-   <a href="support"><i class="fa fa-question" aria-hidden="true">Support</i></a>
-   <a href="privacy"><i class="fa fa-user-secret" aria-hidden="true"></i>Privacy</a>
+    <div class="nav">
+        <i class="fa fa-th-large" aria-hidden="true"></i>
+     <span class="navs">Dashboard</span>
+     </div> 
+     <div class="nav">
+        <i class="fa fa-home" aria-hidden="true"></i>
+        <span class="navs">Home</span>
+        </div>
+        <div class="nav">
+            <i class="fa fa-user" aria-hidden="true"></i>
+        <span class="navs">Profile</span>
+        </div> 
+        <div class="nav">
+            <i class="fa fa-user" aria-hidden="true"></i>
+        <span class="navs">Messages</span>
+        </div> 
+
+        <div class="nav">
+                <i class="fa fa-history" aria-hidden="true"></i>
+        <span class="navs">History</span>
+        </div> 
+    
+        <div class="nav">
+            <i class="fa fa-user" aria-hidden="true"></i>
+        <span class="navs">Task</span>
+        </div> 
+
+        <div class="nav">
+            <i class="fa fa-users" aria-hidden="true"></i>  
+        <span class="navs">Communities</span>
+        </div> 
+
+        <div class="nav">
+            <i class="fa fa-users" aria-hidden="true"></i>  
+        <span class="navs">Settings</span>
+        </div> 
+        <div class="nav">
+            <i class="fa fa-cog" aria-hidden="true"></i> 
+        <span class="navs">Support</span>
+        </div> 
+
+ <div class="nav">
+            <i class="fa fa-user-secret" aria-hidden="true"></i>
+            <span class="navs">Privacy</span> 
    </div>
+</div>
 
    <nav>
     <ul>
@@ -168,15 +227,28 @@ display: block;
 </form>
 </li>
 <li><i class="fa fa-bell" aria-hidden="true"></i></li>
+<ul>
+    <li>
+      <img class="icons" src="https://res.cloudinary.com/dm22fkto2/image/upload/v1712061019/yellow_zpefvk.png" alt="logo" />
+    </li>
+</ul>
 <li>
     <h4>Morgan Oakley</h4>
 </li>
 </ul>
 
 <ul>
+
+    <ul>
+        <li>
+          <img class="icons" src="https://res.cloudinary.com/dm22fkto2/image/upload/v1712061019/yellow_zpefvk.png" alt="logo" />
+        </li>
+    </ul>
 <li>
     <p>Hi there, <br>Morgan Oakley(@morgan)<br></p>
 </li>
+
+
    
      <li><a href="#" class="btn">New</a></li>
      <li><a href="#" class="btn">Upload</a></li>
@@ -187,36 +259,43 @@ display: block;
     <div class="card"> 
     <h3>Super cool project</h3>
     <p>Sed tempus ut lacus et scelerisque.Suspendisse sollicitudin nibh erat, id facilisis felis accumsan</p>
+    <i class="fa fa-star" aria-hidden="true"></i>
     <i class="fa fa-share-alt" aria-hidden="true"></i>
     <i class="fa fa-eye" aria-hidden="true"></i>
+    
    </div>
    <div class="card">
     <h3>Less Cool Project</h3>
     <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, variud pellentesque lacus</p>
+    <i class="fa fa-star" aria-hidden="true"></i>
     <i class="fa fa-share-alt" aria-hidden="true"></i>  
     <i class="fa fa-eye" aria-hidden="true"></i>
 </div>
    <div class="card">
     <h3>Impossibe App</h3>
     <p>In hac habitass platea dictumst. Vivamus dictum arcu, a placerat velit segittis id.</p>
+    <i class="fa fa-star" aria-hidden="true"></i>
     <i class="fa fa-share-alt" aria-hidden="true"></i>
     <i class="fa fa-eye" aria-hidden="true"></i>
    </div>
    <div class="card">
     <h3>Ad Blocker</h3>
     <p>Quisque eget rutrum nisi. Nam augue justo, cursus vitea metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+    <i class="fa fa-star" aria-hidden="true"></i>
     <i class="fa fa-share-alt" aria-hidden="true"></i>
     <i class="fa fa-eye" aria-hidden="true"></i>
 </div>
    <div class="card">
     <h3>Ad Blocker</h3>
     <p>Quisque eget rutrum nisi. Nam augue justo, cursus vitea metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+    <i class="fa fa-star" aria-hidden="true"></i>
     <i class="fa fa-share-alt" aria-hidden="true"></i>   
     <i class="fa fa-eye" aria-hidden="true"></i>
 </div>
    <div class="card">
     <h3>Money Maker</h3>
     <p>Praesent conaliis, libero quis congue elementum, nunc ante faucibus spien, ac scelerique tortot perus sit amet ex. Pellentesque molis nec sem vel aliuam</p>.</p>
+    <i class="fa fa-star" aria-hidden="true"></i>
     <i class="fa fa-share-alt" aria-hidden="true"></i> 
     <i class="fa fa-eye" aria-hidden="true"></i> 
 </div>
@@ -234,16 +313,17 @@ display: block;
     
      <div class="card3"> 
         <div class="text">Trending</div>
-            <h3><i class="fab fa-waze"></i>@tegan</h3>
+            <h3><img class="icons" src="https://res.cloudinary.com/dm22fkto2/image/upload/v1712061019/yellow_zpefvk.png" alt="logo" />@tegan</h3>
             <p>World Peace Builder </p>
-            <h3><i class="fab fa-waze"></i>@morgan</h3>
+            <h3><img class="icons" src="https://res.cloudinary.com/dm22fkto2/image/upload/v1712061019/yellow_zpefvk.png" alt="logo" /></i>@morgan</h3>
                <p>Super Cool Project</p>
-               <h3><i class="fab fa-waze"></i>@Kendall</h3>
+               <h3><img class="icons" src="https://res.cloudinary.com/dm22fkto2/image/upload/v1712061019/yellow_zpefvk.png" alt="logo" />@Kendall</h3>
                <p>Life Changing App </p>
 
-               <h3><i class="fab fa-waze"></i>@alex</h3>
+               <h3><img class="icons" src="https://res.cloudinary.com/dm22fkto2/image/upload/v1712061019/yellow_zpefvk.png" alt="logo" /></i>@alex</h3>
                <p>No Traffic Maker</p>
     </div>
 
 </div>
 </html>
+    
